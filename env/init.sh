@@ -4,6 +4,6 @@ source LOG.sh
 
 log_enter /Project/env/init
 
-cp ./Project/env/linux/*.sh ./Env
+cp ./Project/env/init/*.sh ./Env
 
 log_exit /Project/env/init
