@@ -22,5 +22,5 @@ SET PROJ_VOL_DIR        =%MS_VOL_DIR%
 
 SET PROJ_DB_NAME        =%MS_DB_NAME%
 
-CALL LOG_EXIT pENV
+call :log_exit pENV
 
