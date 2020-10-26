@@ -4,6 +4,6 @@ source LOG.sh
 
 log_enter /$DIR_PROJ/docker/init
 
-cp ./$DIR_PROJ/docker/init/*.sh ./Exe
+cp ./$DIR_PROJ/docker/linux/*.sh ./Exe
 
 log_exit /$DIR_PROJ/docker/init
