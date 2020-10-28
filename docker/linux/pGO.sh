@@ -3,7 +3,8 @@
 source settings.sh
 source LOG.sh
 
-log_enter pGO
+
+log_load pGO
 
 source pENV.sh
 
@@ -35,6 +36,7 @@ log_var USER $USER
 log_var VOL $VOL
 log_var VOL_DIR $VOL_DIR
 
+
 docker run \
        -lt \
        -p $HOST:$PORT_EXT:$PORT_INT \
@@ -45,4 +47,4 @@ docker run \
        --network=$NET \
        $IMG
 
-log_exit pGO
+log_unload pGO

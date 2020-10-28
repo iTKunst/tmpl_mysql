@@ -6,6 +6,7 @@ log_enter pENV
 
 source sENV.sh
 
+
 export PROJ_LABEL=$SYS
 export PROJ_NET=$SYS_NET
 
@@ -23,6 +24,5 @@ export PROJ_USER=$MS_USER
 export PROJ_VOL=$MS_VOL
 export PROJ_VOL_DIR=$MS_VOL_DIR
 
-export PROJ_DB_NAME=$MS_DB_NAME
 
 log_exit pENV
