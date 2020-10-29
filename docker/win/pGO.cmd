@@ -38,7 +38,7 @@ call LOG_VAR VOL_DIR %VOL_DIR%
 docker run ^
        -it ^
        -p %HOST%:%PORT_EXT%:%PORT_INT% ^
-       -e MYSQL_ROOT_PASSWORD=$PASSWORD \
+       -e MYSQL_ROOT_PASSWORD=%PASSWORD% \
        --label=%LABEL% ^
        --name=%CONT% ^
        --network=%NET% ^
