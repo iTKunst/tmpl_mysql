@@ -4,11 +4,10 @@ USER root
 
 EXPOSE 8080
 
-ARG HOME
+ARG HOST_DIR
+ARG CONT_DIR
 
-ENV PATH ${PATH}:${HOME}/bin
+RUN echo HOST_DIR is $HOST_DIR
 
-WORKDIR $HOME
-
-COPY ./System/data/ms/*.sql /docker-entrypoint-initdb.d/
+COPY ${HOST_DIR}/*.sql /docker-entrypoint-initdb.d/
 
